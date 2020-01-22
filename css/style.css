@@ -15,6 +15,7 @@
 .container.fullpage {
     width: 100%;
     background-image: url(../img/background.jpg);
+    background-size: 25%;
     background-repeat: repeat;
     padding: 20px 0 20px 0;
     margin: 0 auto;
@@ -51,18 +52,19 @@
     transform: translate(-50%,-50%);
     color: white;
     text-transform: uppercase;
-    border: 4px solid white;
+    border: 5px solid white;
     padding: 5px;
     font-size: 30px;
 }
 
 .header h2 {
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: white;
     font-size: 20px;
+    text-transform: uppercase;
 }
 
 nav {
@@ -70,21 +72,22 @@ nav {
     height: 50px;
     margin: 0 auto;
     background-color: #666666;
+    line-height: 50px;
+    text-align: center;
 }
 
 nav ul {
-text-align: center;
+display: inline-block;
 }
 
 nav li{
-    display: inline-block;
     padding-right: 10px;
     padding-left: 10px;
     font-size: 15px;
-    line-height: 50px;
-    color: white;
     text-transform: uppercase;
     border-right: 1px solid darkgrey;
+    float: left;
+    list-style: none;
 }
 
 nav li:last-child{
@@ -156,7 +159,6 @@ h5 {
 /* footer */
 .footer {
     width: 70%;
-    height: 130px;
     margin: 0 auto;
     padding-top: 5px;
     border-radius: 3px;
@@ -174,19 +176,18 @@ h5 {
     padding-bottom: 5px;
 }
 
-.social {
+.social-icons {
     color: #666666;
     font-size: 30px;
+    float: left;
+    width: 33.33%;
+    padding: 10px;
 }
 
-.fab {
-    padding: 20px 100px;
-}
-
-.social a {
+.social-icons a {
     color: #666666;
 }
 
-.social a:hover {
+.social-icons a:hover {
     color: #000000;
 }
